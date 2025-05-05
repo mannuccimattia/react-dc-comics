@@ -1,3 +1,5 @@
+import BottomMain from "./BottomMain"
+
 const Main = () => {
   return (
     <main>
@@ -8,7 +10,7 @@ const Main = () => {
       </section>
       <section className="bottom-main">
         <div className="container">
-          Bottom content
+          <BottomMain></BottomMain>
         </div>
       </section>
     </main>

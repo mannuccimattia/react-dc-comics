@@ -119,6 +119,33 @@ header ul li a.active+.mark {
   padding: 50px 0;
 }
 
+.list-wrapper {
+  display: flex;
+  align-items: center;
+  color: #fff;
+
+}
+
+.bottom-main ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.bottom-main ul li {
+  flex-basis: 18%;
+  margin: 0 20px;
+  font-size: 14px;
+}
+
+.bottom-main img {
+  height: 50px;
+  margin-right: 20px;
+}
+
+.bottom-main li:last-of-type img {
+  width: 50px;
+}
+
 /* ******************************************** */
 /*                    FOOTER                    */
 /* ******************************************** */
