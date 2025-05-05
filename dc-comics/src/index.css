@@ -8,7 +8,7 @@
 /*                     TAGS                     */
 /* ******************************************** */
 body {
-  background-color: #412121;
+  background-color: #2e2626;
   font-family: "Open Sans", sans-serif;
 }
 
@@ -87,4 +87,52 @@ header ul li {
 .bottom-main {
   background-color: #2C7DF5;
   padding: 50px 0;
+}
+
+/* ******************************************** */
+/*                    FOOTER                    */
+/* ******************************************** */
+.top-footer {
+  background-image: url("./assets/img/footer-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.top-footer .content {
+  display: flex;
+}
+
+.top-footer .footer-col {
+  flex-basis: 50%;
+}
+
+.top-footer .left {
+  display: flex;
+  margin: 30px 0 40px 0;
+}
+
+.top-footer .left .footer-subcol {
+  flex-basis: calc(70% / 3);
+}
+
+.left h3 {
+  color: #fff;
+  margin: 10px 0;
+  letter-spacing: -1px;
+}
+
+.left ul {
+  line-height: 18px;
+}
+
+.left li a {
+  color: gray;
+  font-size: 12px;
+}
+
+.top-footer .right figure {
+  height: 100%;
+  background-image: url("./assets/img/dc-logo-bg.png");
+  background-size: cover;
+  background-position-y: 50%;
 }
