@@ -30,3 +30,5 @@ nome repo: react-dc-comics
 Trovate in allegato lo screenshot e il file contenente l'array. Copiate il contenuto di quest'ultimo nella componente ListComics.jsx
 
 *Numero minimo di push: 8*
+
+DONE
