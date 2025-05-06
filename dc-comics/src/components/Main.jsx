@@ -1,11 +1,12 @@
 import BottomMain from "./BottomMain"
+import ListComics from "./ListComics"
 
 const Main = () => {
   return (
     <main>
       <section className="top-main">
         <div className="container">
-          <h2>--&gt; Content goes here &lt;--</h2>
+          <ListComics></ListComics>
         </div>
       </section>
       <section className="bottom-main">
