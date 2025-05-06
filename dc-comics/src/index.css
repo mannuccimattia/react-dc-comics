@@ -113,6 +113,33 @@ header ul li a.active+.mark {
   font-weight: 700;
 }
 
+/* .comics-wapper */
+.comics-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.comic-card {
+  flex-basis: calc((100% - 100px) / 6);
+}
+
+.comic-card img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  object-position: top;
+}
+
+.comic-card h5 {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 400;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+/* .bottom-main */
 .bottom-main {
   background-color: #2C7DF5;
   padding: 50px 0;

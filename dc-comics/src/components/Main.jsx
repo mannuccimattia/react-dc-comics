@@ -6,7 +6,9 @@ const Main = () => {
     <main>
       <section className="top-main">
         <div className="container">
-          <ListComics></ListComics>
+          <div className="comics-wrapper">
+            <ListComics></ListComics>
+          </div>
         </div>
       </section>
       <section className="bottom-main">

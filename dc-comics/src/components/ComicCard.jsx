@@ -1,8 +1,9 @@
 const ComicCard = ({ thumb, series }) => {
+
   return (
     <div className='comic-card'>
       <img src={thumb} alt="" />
-      <h3>{series}</h3>
+      <h5>{series}</h5>
     </div>
   )
 }
