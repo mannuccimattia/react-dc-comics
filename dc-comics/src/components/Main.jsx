@@ -5,10 +5,17 @@ const Main = () => {
   return (
     <main>
       <section className="top-main">
-        <div id="jumbotron"></div>
+        <div id="jumbotron">
+          <span id="flag">CURRENT SERIES</span>
+        </div>
         <div className="container">
           <div className="comics-wrapper">
             <ListComics></ListComics>
+          </div>
+          <div className="btn-wrapper">
+            <div id="load-btn">
+              <a href="#">LOAD MORE</a>
+            </div>
           </div>
         </div>
       </section>
