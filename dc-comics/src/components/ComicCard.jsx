@@ -1,8 +1,8 @@
-const ComicCard = () => {
+const ComicCard = ({ thumb, series }) => {
   return (
     <div className='comic-card'>
-      <img src="src/assets/img/dc-logo.png" alt="" />
-      <h3>title placeholder</h3>
+      <img src={thumb} alt="" />
+      <h3>{series}</h3>
     </div>
   )
 }
