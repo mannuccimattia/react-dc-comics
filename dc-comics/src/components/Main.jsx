@@ -5,6 +5,7 @@ const Main = () => {
   return (
     <main>
       <section className="top-main">
+        <div id="jumbotron"></div>
         <div className="container">
           <div className="comics-wrapper">
             <ListComics></ListComics>
