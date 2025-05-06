@@ -175,6 +175,17 @@ header ul li a.active+.mark {
   color: #fff;
 }
 
+#load-btn:hover {
+  padding: 20px 100px;
+  transition: 0.3s;
+  background-color: transparent;
+  border: 2px solid #2C7DF5;
+}
+
+.comic-card:hover h5 {
+  text-decoration: underline;
+}
+
 /* .bottom-main */
 .bottom-main {
   background-color: #2C7DF5;
@@ -206,6 +217,11 @@ header ul li a.active+.mark {
 
 .bottom-main li:last-of-type img {
   width: 50px;
+}
+
+.list-wrapper:hover>div {
+  text-decoration: underline;
+  font-weight: 500;
 }
 
 /* ******************************************** */
