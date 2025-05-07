@@ -1,4 +1,79 @@
+const links = [
+  {
+    id: 1,
+    href: "#",
+    label: "Characters",
+    current: false,
+  },
+  {
+    id: 2,
+    href: "#",
+    label: "Comics",
+    current: true,
+  },
+  {
+    id: 3,
+    href: "#",
+    label: "Movies",
+    current: false,
+  },
+  {
+    id: 4,
+    href: "#",
+    label: "TV",
+    current: false,
+  },
+  {
+    id: 5,
+    href: "#",
+    label: "Games",
+    current: false,
+  },
+  {
+    id: 6,
+    href: "#",
+    label: "Collectibles",
+    current: false,
+  },
+  {
+    id: 7,
+    href: "#",
+    label: "Videos",
+    current: false,
+  },
+  {
+    id: 8,
+    href: "#",
+    label: "Fans",
+    current: false,
+  },
+  {
+    id: 9,
+    href: "#",
+    label: "News",
+    current: false,
+  },
+  {
+    id: 10,
+    href: "#",
+    label: "Shop",
+    current: false,
+  }
+]
+
 const Header = () => {
+
+  const renderLinks = () => {
+    return links.map(({ id, href, label, current }) => (
+      <li key={`link-${id}`}>
+        <a href={href} className={current ? "active" : ""}>
+          {label}
+        </a>
+        <div className="mark"></div>
+      </li>
+    ))
+  }
+
   return (
     <header>
       <div className="container">
@@ -7,46 +82,7 @@ const Header = () => {
         </figure>
         <nav>
           <ul>
-            <li>
-              <a href="#">Characters</a>
-              <div className="mark"></div>
-            </li>
-            <li>
-              <a href="#" className="active">Comics</a>
-              <div className="mark"></div>
-            </li>
-            <li>
-              <a href="#">Movies</a>
-              <div className="mark"></div>
-            </li>
-            <li>
-              <a href="#">Tv</a>
-              <div className="mark"></div>
-            </li>
-            <li>
-              <a href="#">Games</a>
-              <div className="mark"></div>
-            </li>
-            <li>
-              <a href="#">Collectibles</a>
-              <div className="mark"></div>
-            </li>
-            <li>
-              <a href="#">Videos</a>
-              <div className="mark"></div>
-            </li>
-            <li>
-              <a href="#">Fans</a>
-              <div className="mark"></div>
-            </li>
-            <li>
-              <a href="#">News</a>
-              <div className="mark"></div>
-            </li>
-            <li>
-              <a href="#">Shop</a>
-              <div className="mark"></div>
-            </li>
+            {renderLinks()}
           </ul>
         </nav>
       </div>
