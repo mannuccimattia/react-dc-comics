@@ -1,3 +1,4 @@
+import React from "react";
 import ComicCard from "./ComicCard"
 
 const comics = [
@@ -61,7 +62,7 @@ const comics = [
     id: 5,
     title: "Batman #56",
     description: "The Dark Knight's looking to drop both the hammer and sickle on the KGBeast. The Russian super-assassin has gone too far, and Batman will stop at nothing to hunt him down. But is the Dark Knight willing to step into the darkness himself to find justice?",
-    thumb: "https://imgs.search.brave.com/3vP5d3cOVOuC0f6Uhm7CkV_qFk5hGj5rE4jK5I6n7dI/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly9jZG4y/LnBlbmd1aW4uY29t/LmF1L2NvdmVycy9v/cmlnaW5hbC83OTYx/OTQzMTM5OTk4Lmpw/Zw",
+    thumb: "src/assets/img/placeholder.png",
     price: "$3.99",
     series: "Batman",
     sale_date: "2018-10-03",
@@ -156,21 +157,12 @@ const comics = [
 ];
 
 const ListComics = () => {
-  const placeholder = "src/assets/img/placeholder.png"
+
   return (
     <>
-      <ComicCard thumb={comics[0].thumb} series={comics[0].series} />
-      <ComicCard thumb={comics[1].thumb} series={comics[1].series} />
-      <ComicCard thumb={comics[2].thumb} series={comics[2].series} />
-      <ComicCard thumb={comics[3].thumb} series={comics[3].series} />
-      <ComicCard thumb={placeholder} series={comics[4].series} />
-      <ComicCard thumb={comics[5].thumb} series={comics[5].series} />
-      <ComicCard thumb={comics[6].thumb} series={comics[6].series} />
-      <ComicCard thumb={comics[7].thumb} series={comics[7].series} />
-      <ComicCard thumb={comics[8].thumb} series={comics[8].series} />
-      <ComicCard thumb={comics[9].thumb} series={comics[9].series} />
-      <ComicCard thumb={comics[10].thumb} series={comics[10].series} />
-      <ComicCard thumb={comics[11].thumb} series={comics[11].series} />
+      {comics.map(({ id, thumb, series }) => (
+        <ComicCard key={`comic-${id}`} thumb={thumb} series={series} />
+      ))}
     </>
   )
 }
